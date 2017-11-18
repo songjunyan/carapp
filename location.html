@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+		<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+		<title>车友宝--定位</title>
+		<link rel="stylesheet" type="text/css" href="css/aui.2.0.css" />
+		<link rel="stylesheet" href="css/aui-slide.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<style>
+			.info select {
+				border: 1px #993300 solid;
+				background: #FFFFFF;
+				width: 32%;
+				float: left;
+				box-sizing: border-box;
+			}
+			
+			.info {
+				margin: 5px;
+				text-align: center;
+				height: auto;
+				overflow: hidden;
+			}
+			
+			.info #show {
+				color: #3399FF;
+			}
+			
+			.bottom {
+				text-align: right;
+				font-size: 12px;
+				color: #CCCCCC;
+				width: 1000px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="aui-bar aui-bar-nav">
+			<a class="aui-pull-left aui-btn" href="javascript:history.go(-1)">
+				<span class="aui-iconfont aui-icon-left"></span>
+			</a>
+			<div class="aui-title">定位</div>
+		</header>
+		<div class="info-foot"style="margin: 0 auto;">
+			<span>锁定所在的区域</span>
+		</div>
+		<form>
+			<div class="info">
+				<div>
+					<select id="s_province" name="s_province" style="margin-right:2%;"></select>
+					<select id="s_city" name="s_city" style="margin-right:2%;"></select>
+					<select id="s_county" name="s_county"></select>
+					<script class="resources library" src="js/area.js" type="text/javascript"></script>
+
+					<script type="text/javascript">
+						_init_area();
+					</script>
+				</div>
+				<div id="show"></div>
+			</div>
+
+			<div class="info-foot" style="margin-top: 40px;text-align: right;">
+				<div class="aui-btn aui-btn-info">取消</div>
+				<div class="aui-btn aui-btn-warning">确定</div>
+			</div>
+		</form>
+		<script type="text/javascript">
+			var Gid = document.getElementById;
+			var showArea = function() {
+				Gid('show').innerHTML = "<h3>省" + Gid('s_province').value + " - 市" +
+					Gid('s_city').value + " - 县/区" +
+					Gid('s_county').value + "</h3>"
+			}
+			Gid('s_county').setAttribute('onchange', 'showArea()');
+		</script>
+	</body>
+
+</html>

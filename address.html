@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+		<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+		<title>车友宝--管理收货地址</title>
+		<link rel="stylesheet" type="text/css" href="css/aui.2.0.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/style2.css" />
+	</head>
+
+	<body>
+		<header class="aui-bar aui-bar-nav">
+			<a class="aui-pull-left aui-btn" href="javascript:history.go(-1)">
+				<span class="aui-iconfont aui-icon-left">管理收货地址</span>
+			</a>
+			<div class="aui-title"></div>
+		</header>
+
+		<div class="lists">
+			<div class="address">
+				<div class="address-font">
+					<div class="aui-col-xs-6">
+						<span>灰太狼</span>
+					</div>
+					<div class="aui-col-xs-6 sd">
+						<span>13253476330</span>
+					</div>
+				</div>
+				<div class="address-font">
+					<div class="aui-col-xs-12">
+						<span>河南省郑州市中原区建设路街道中原中路中原工学院北区41号</span>
+					</div>
+				</div>
+				<div class="address-font ss">
+					<div class="aui-col-xs-6">
+						<input type="checkbox" name="check" checked=""/>&nbsp;<span style="color: darkorange;"><b>默认地址</b></span>
+					</div>
+					<div class="aui-col-xs-6 sd">
+						<i class="aui-iconfont aui-icon-edit"></i>&nbsp;编辑&nbsp;&nbsp;
+						<i class="aui-iconfont aui-icon-trash"></i>&nbsp;删除
+					</div>
+				</div>
+			</div>
+
+		</div>
+        <footer class="aui-bar aui-bar-tab" id="footer">
+        <a href="addAddress.html"><div class="aui-btn  aui-btn-block" style="background: orangered;color: white;">添加新地址</div></a>
+        </footer>
+	</body>
+	<script type="text/javascript" src="js/api.js"></script>
+	<script type="text/javascript" src="js/aui-tab.js" ></script>
+	<script type="text/javascript">
+		apiready = function() {
+			api.parseTapmode();
+		}
+		var tab = new auiTab({
+			element: document.getElementById("footer")
+		}, function(ret) {
+			console.log(ret);
+		});
+	</script>
+
+</html>

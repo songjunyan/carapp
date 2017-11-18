@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+		<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+		<title>车友宝--个人中心</title>
+		<link rel="stylesheet" type="text/css" href="css/aui.2.0.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script type="text/javascript" src="js/jquery-1.8.0.js"></script>
+	</head>
+
+	<body>
+		<header class="aui-bar aui-bar-nav">
+			<div class="aui-title">个人中心</div>
+		</header>
+		<div class="user">
+			<div class="aui-col-xs-12">
+				<div class="aui-col-xs-3">
+					<a href="person.html">
+						<img src="img/person.jpg" />
+					</a>
+				</div>
+				<div class="aui-col-xs-9">
+					<div style="width:90%;height:80px;margin: 0 auto;">
+						<div class="user-1" style="margin-top:20px;">
+							<span>用户名</span>
+						</div>
+						<div class="user-1">
+							<span class="font">车友宝余额:<b>909</b>&nbsp;<i class="aui-iconfont aui-icon-display open"></i></span>
+							<span class="star">*********<i class="aui-iconfont aui-icon-display hide"></i></span>
+						</div>
+						<script>
+							$(function() {
+								$(".open").click(function() {
+									$(".star").show();
+									$(".font").hide();
+								});
+								$(".hide").click(function() {
+									$(".star").hide();
+									$(".font").show();
+								});
+							})
+						</script>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="user-menu" style="height:auto;">
+			<div class="aui-card-list">
+				<div class="aui-card-list-content">
+					<ul class="aui-list aui-media-list">
+						<li class="aui-list-item aui-list-item-middle">
+							<a href="myorder.html">
+								<div class="aui-media-list-item-inner">
+									<div class="aui-list-item-inner aui-list-item-arrow">
+										<div class="aui-col-xs-1"><img src="img/00.png" style="width:30px;height: auto;" /></div>
+										<div class="aui-col-xs-6"><span>&nbsp;订单</span></div>
+									</div>
+								</div>
+							</a>
+						</li>
+					</div>
+			   </div>
+			</div>
+		</div>
+		<section class="aui-grid aui-margin-b-15" id="section" style="margin-top: -20px;">
+			<div class="aui-row">
+				<div class="aui-col-xs-3">
+					<div class="aui-badge">2</div>
+					<i class="aui-iconfont aui-icon-calendar"></i>
+					<div class="aui-grid-label">待付款</div>
+				</div>
+				<div class="aui-col-xs-3">
+					<div class="aui-badge">2</div>
+					<i class="aui-iconfont aui-icon-paper"></i>
+					<div class="aui-grid-label">待发货</div>
+				</div>
+				<div class="aui-col-xs-3">
+					<div class="aui-badge">2</div>
+					<i class="aui-iconfont aui-icon-cert"></i>
+					<div class="aui-grid-label">待收货</div>
+				</div>
+				<div class="aui-col-xs-3">
+					<div class="aui-badge">1</div>
+					<i class="aui-iconfont aui-icon-edit"></i>
+					<div class="aui-grid-label">待评价</div>
+				</div>
+			</div>
+		</section>
+		<div class="user-menu">
+			<div class="aui-card-list">
+				<div class="aui-card-list-content">
+					<ul class="aui-list aui-media-list">
+						<li class="aui-list-item aui-list-item-middle">
+							<a href="">
+								<div class="aui-media-list-item-inner">
+									<div class="aui-list-item-inner aui-list-item-arrow">
+										<div class="aui-col-xs-1"><img src="img/11.png" style="width:30px;height: auto;" /></div>
+										<div class="aui-col-xs-6"><span>&nbsp;活动</span></div>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="aui-list-item aui-list-item-middle">
+							<a href="">
+								<div class="aui-media-list-item-inner">
+									<div class="aui-list-item-inner aui-list-item-arrow">
+										<div class="aui-col-xs-1"><img src="img/22.png" style="width:30px;height: auto;" /></div>
+										<div class="aui-col-xs-6"><span>&nbsp;推广</span></div>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="aui-list-item aui-list-item-middle">
+							<a href="">
+								<div class="aui-media-list-item-inner">
+									<div class="aui-list-item-inner aui-list-item-arrow">
+										<div class="aui-col-xs-1"><img src="img/bb.png" style="width:30px;height: auto;" /></div>
+										<div class="aui-col-xs-6"><span>&nbsp;关于</span></div>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="aui-list-item aui-list-item-middle">
+							<a href="addAddress.html">
+								<div class="aui-media-list-item-inner">
+									<div class="aui-list-item-inner aui-list-item-arrow">
+										<div class="aui-col-xs-1"><img src="img/aa.png" style="width:30px;height: auto;" /></div>
+										<div class="aui-col-xs-6"><span>&nbsp;收件地址</span></div>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="aui-list-item aui-list-item-middle">
+							<a href="businessCenter.html">
+								<div class="aui-media-list-item-inner">
+									<div class="aui-list-item-inner aui-list-item-arrow">
+										<div class="aui-col-xs-1"><img src="img/33.png" style="width:30px;height: auto;" /></div>
+										<div class="aui-col-xs-6"><span>&nbsp;商家入口</span></div>
+									</div>
+								</div>
+							</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+			<div class="fot"></div>
+		</div>
+		
+		<footer class="aui-bar aui-bar-tab" id="footer">
+			<div class="aui-bar-tab-item aui-active" tapmode>
+				<a href="index.html">
+					<i class="aui-iconfont aui-icon-home"></i>
+					<div class="aui-bar-tab-label">首页</div>
+				</a>
+			</div>
+			<div class="aui-bar-tab-item" tapmode>
+				<a href="list.html">
+					<i class="aui-iconfont aui-icon-menu"></i>
+					<div class="aui-bar-tab-label">分类</div>
+				</a>
+			</div>
+			<div class="aui-bar-tab-item" tapmode>
+				<a href="businessList.html">
+					<i class="aui-iconfont aui-icon-pencil"></i>
+					<div class="aui-bar-tab-label">商家列表</div>
+				</a>
+			</div>
+			<div class="aui-bar-tab-item" tapmode>
+				<a href="personal.html" style="color:limegreen;">
+					<i class="aui-iconfont aui-icon-my"></i>
+					<div class="aui-bar-tab-label">个人中心</div>
+				</a>
+			</div>
+		</footer>
+
+	</body>
+	<script type="text/javascript" src="js/api.js"></script>
+	<script type="text/javascript" src="js/aui-tab.js"></script>
+	<script type="text/javascript">
+		apiready = function() {
+			api.parseTapmode();
+		}
+		var tab = new auiTab({
+			element: document.getElementById("footer")
+		}, function(ret) {
+			console.log(ret);
+		});
+	</script>
+
+</html>

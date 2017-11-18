@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+		<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+		<title>车友宝--商户中心</title>
+		<link rel="stylesheet" type="text/css" href="../css/aui.2.0.css" />
+		<link rel="stylesheet" href="../css/aui-slide.css" />
+		<link rel="stylesheet" href="../css/style.css" />
+	</head>
+
+	<body>
+		<header class="aui-bar aui-bar-nav">
+			<a class="aui-pull-left aui-btn" href="javascript:history.go(-1)">
+				<span class="aui-iconfont aui-icon-left"></span>&nbsp;<span class="qu">商户资料</span>
+			</a>
+			<div class="aui-title"></div>
+		</header>
+		<div class="aui-content aui-margin-b-15">
+			<ul class="aui-list aui-list-in">
+				<li class="aui-list-item">
+					<div class="aui-list-item-inner aui-list-item-arrow">
+						<div class="aui-list-item-title">店铺图标</div>
+						<div class="aui-list-item-right">
+							<div>
+								<img style="border-radius: 50%;width: 60px;height:60px;margin: 10px;" src="../img/3bc.jpg" />
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="aui-list-item">
+					<div class="aui-list-item-inner aui-list-item-arrow">
+						<div class="aui-list-item-title">会员名</div>
+						<div class="aui-list-item-right">
+							<div class="aui-fold-content" style="position:relative;top:0; left:0">国民女神</div>
+						</div>
+					</div>
+				</li>
+				<li class="aui-list-item">
+					<div class="aui-list-item-inner aui-list-item-arrow">
+						<div class="aui-list-item-title">店铺昵称</div>
+						<div class="aui-list-item-right">
+							<div class="aui-fold-content" style="position:relative;top:0; left:0"></div>
+						</div>
+					</div>
+				</li>
+				<li class="aui-list-item">
+					<div class="aui-list-item-inner aui-list-item-arrow">
+						<div class="aui-list-item-title">店铺二维码</div>
+						<div class="aui-list-item-right">
+							<div>
+								<a id="examplel" href="../img/37.jpg"><img src="../img/37.jpg" style="width: 40px;height: auto;" /></a>
+							</div>
+						</div>
+						<script type="text/javascript" src="../js/jquery.min.js"></script>
+						<script type="text/javascript" src="../js/jquery.imgbox.pack.js"></script>
+						<script>
+							$(function() {
+								$("#examplel").imgbox({
+									'alignment': 'center',
+								});
+							});
+						</script>
+					</div>
+				</li>
+				<li class="aui-list-item">
+					<div class="aui-list-item-inner aui-list-item-arrow">
+						<div class="aui-list-item-title">店铺地址</div>
+						<div class="aui-list-item-right">
+							<div class="aui-fold-content" style="position:relative;top:0; left:0"></div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/api.js"></script>
+	<script type="text/javascript">
+		apiready = function() {
+			api.parseTapmode();
+		}
+	</script>
+
+</html>

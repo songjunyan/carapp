@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+		<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+		<title>车友宝--商品详情</title>
+		<link rel="stylesheet" type="text/css" href="css/aui.2.0.css" />
+		<link rel="stylesheet" href="css/aui-slide.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/style2.css" />
+		<script type="text/javascript" src="js/jquery-1.8.0.js"></script>
+	</head>
+
+	<body>
+		<header class="aui-bar aui-bar-nav" id="header">
+			<a class="aui-pull-left aui-btn" href="javascript:history.go(-1)">
+				<span class="aui-iconfont aui-icon-left">商品详情</span>
+			</a>
+			<div class="aui-title"></div>
+			<a class="aui-pull-right aui-btn" href="index.html">
+				<span class="aui-iconfont aui-icon-home"></span>
+			</a>
+		</header>
+		<div id="aui-slide3">
+			<div class="aui-slide-wrap">
+				<div class="aui-slide-node bg-dark">
+					<img src="img/-1545572374.jpg" />
+				</div>
+				<div class="aui-slide-node bg-dark">
+					<img src="img/-336962245.jpg" />
+				</div>
+				<div class="aui-slide-node bg-dark">
+					<img src="img/1365669349.jpg" />
+				</div>
+				<div class="aui-slide-node bg-dark">
+					<img src="img/2143335717.jpg" />
+				</div>
+				<div class="aui-slide-node bg-dark">
+					<img src="img/378334728.jpg" />
+				</div>
+			</div>
+			<div class="aui-slide-page-wrap">            
+			</div>
+		</div>
+        <div class="detail">
+        	<div class="detail-font" style="max-height:60px;">
+        		<span>慵懒2016秋冬新款高领毛衣女加厚黄色宽松中长款针织上衣</span>
+        	</div>
+        	<div class="detail-font" style="height:50px;">
+        		<span style="color: red;">￥<span style="font-size: 25px;">138</span>&nbsp;<span style="border: 1px solid red;font-size: 10px;padding:1px;">限时抢购</span></span>
+        		<p style="text-decoration: line-through;" class="tong">价格&nbsp;￥298</p>
+        	</div>
+        	<div class="detail-font">
+        		<div class="aui-col-xs-4">
+        			<p class="tong">快递费：10元</p>
+        		</div>
+        		<div class="aui-col-xs-4" style="text-align: center;">
+        			<p class="tong">月销4294笔</p>
+        		</div>
+        		<div class="aui-col-xs-4" style="text-align: right;">
+        			<p class="tong">广东广州</p>
+        		</div>
+        	</div>
+        </div>
+        <div class="detail-ping">
+        	<span>宝贝评价（344）</span>
+        	<div class="ping-btn">
+        		<span class="aui-btn">查看全部评论</span>
+        	</div>
+        </div>
+        <div class="detail-img">
+        	<span>&nbsp;图文详情</span>
+        	<img src="img/ping.png"/>
+        	<img src="img/ping2.png"/>
+        	<img src="img/ping3.png"/>
+        </div>
+		<script type="text/javascript" src="js/api.js"></script>
+		<script type="text/javascript" src="js/aui-tab.js"></script>
+		<script type="text/javascript" src="js/aui-slide.js"></script>
+		<script type="text/javascript">
+			apiready = function() {
+				api.parseTapmode();
+			}
+			var tab = new auiTab({
+				element: document.getElementById("footer")
+			}, function(ret) {
+				console.log(ret);
+			});
+
+			var slide = new auiSlide({
+				container: document.getElementById("aui-slide"),
+
+				"height": 500,
+				"speed": 300,
+				"pageShow": true,
+				"pageStyle": 'dot',
+				"loop": true,
+				'dotPosition': 'center',
+				currentPage: currentFun
+			})
+
+			function currentFun(index) {
+				console.log(index);
+			}
+			var slide2 = new auiSlide({
+				container: document.getElementById("aui-slide2"),
+				"height": 400,
+				"speed": 300,
+				"autoPlay": 0, //自动播放
+				"pageShow": true,
+				"loop": true,
+				"pageStyle": 'dot',
+				'dotPosition': 'center'
+			})
+			var slide3 = new auiSlide({
+				container: document.getElementById("aui-slide3"),
+				"height": 300,
+				"speed": 500,
+				"autoPlay": 3000, //自动播放
+				"loop": true,
+				"pageShow": true,
+				"pageStyle": 'dot',
+				'dotPosition': 'center'
+			});
+			console.log(slide3.pageCount());
+		</script>
+		<div class="fot"></div>
+		<footer class="aui-bar aui-bar-tab" id="footer">
+        <a href="sureOrder.html"><div class="aui-btn  aui-btn-block" style="background: orangered;color: white;">立即购买</div></a>
+        </footer>
+	</body>
+	<script type="text/javascript" src="js/api.js"></script>
+	<script type="text/javascript">
+		apiready = function() {
+			api.parseTapmode();
+		}
+	</script>
+
+</html>

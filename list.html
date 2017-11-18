@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+		<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+		<title>车友宝--商品分类</title>
+		<link rel="stylesheet" type="text/css" href="css/aui.2.0.css" />
+		<link rel="stylesheet" href="css/aui-slide.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script type="text/javascript" src="js/jquery-1.8.0.js"></script>
+		<style>
+			.aui-list-item-inner .aui-list-item-title{margin: 0 auto;}
+		</style>
+	</head>
+
+	<body>
+		<header class="aui-bar aui-bar-nav">
+			<a class="aui-pull-left aui-btn">
+				<span class="aui-iconfont aui-icon-left" onclick="history.back()">商品分类</span>
+			</a>
+			<div class="aui-title"></div>
+		</header>
+		<div class="lists">
+			<div class="aui-col-xs-3">
+				<div class="aui-content aui-margin-b-15">
+					<ul class="aui-list aui-list-in">
+						<li class="aui-list-item" style="text-align: center;">
+							<div class="aui-list-item-inner">
+								<div class="aui-list-item-title">全部分类</div>
+							</div>
+						</li>
+						<li class="aui-list-item">
+							<div class="aui-list-item-inner">
+								<div class="aui-list-item-title">大衣</div>
+							</div>
+						</li>
+						<li class="aui-list-item">
+							<div class="aui-list-item-inner">
+								<div class="aui-list-item-title">衬衫</div>
+							</div>
+						</li>
+						<li class="aui-list-item">
+							<div class="aui-list-item-inner">
+								<div class="aui-list-item-title">围巾</div>
+							</div>
+						</li>
+						<li class="aui-list-item">
+							<div class="aui-list-item-inner">
+								<div class="aui-list-item-title">帽子</div>
+							</div>
+						</li>
+						<li class="aui-list-item">
+							<div class="aui-list-item-inner">
+								<div class="aui-list-item-title">披肩</div>
+							</div>
+						</li>
+						<li class="aui-list-item">
+							<div class="aui-list-item-inner">
+								<div class="aui-list-item-title">裙子</div>
+							</div>
+						</li>
+						<li class="aui-list-item">
+							<div class="aui-list-item-inner">
+								<div class="aui-list-item-title">裤子</div>
+							</div>
+						</li>
+						<li class="aui-list-item">
+							<div class="aui-list-item-inner">
+								<div class="aui-list-item-title">雪纺</div>
+							</div>
+						</li>
+						<li class="aui-list-item">
+							<div class="aui-list-item-inner">
+								<div class="aui-list-item-title">袜子</div>
+							</div>
+						</li>
+						<li class="aui-list-item">
+							<div class="aui-list-item-inner">
+								<div class="aui-list-item-title">高腰裙</div>
+							</div>
+						</li>
+						<li class="aui-list-item">
+							<div class="aui-list-item-inner">
+								<div class="aui-list-item-title">阔腿裤</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="aui-col-xs-9">
+				<div class="list-2">
+					<div class="aui-btn aui-btn-info">妮子大衣</div>
+					<div class="aui-btn aui-btn-primary">斗篷大衣</div>
+					<div class="aui-btn aui-btn-success">韩版大衣</div>
+					<div class="aui-btn aui-btn-warning">学院风格大衣</div>
+					<div class="aui-btn aui-btn-danger">古典风大衣</div>
+					<div class="aui-btn">清新大衣</div>
+					<div class="aui-btn aui-btn-primary">欧美风大衣</div>
+					<div class="aui-btn aui-btn-success">中长款大衣</div>
+					<div class="aui-btn aui-btn-warning">短大衣</div>
+					<div class="aui-btn aui-btn-danger">厚大衣</div>
+					<div class="aui-btn aui-btn-info">春季大衣</div>
+					<div class="aui-btn aui-btn-primary">秋季大衣</div>
+					<div class="aui-btn aui-btn-success">带绒大衣</div>
+					<div class="aui-btn aui-btn-danger">带毛绒大衣</div>
+					<div class="aui-btn">银灰色大衣</div>
+					<div class="aui-btn aui-btn-primary">带腰带</div>
+					<div class="aui-btn aui-btn-success">裙边大衣</div>
+					<div class="aui-btn aui-btn-warning">荷叶边大衣</div>
+					<div class="aui-btn aui-btn-success">毛领大衣</div>
+					<div class="aui-btn aui-btn-warning">毛袖大衣</div>
+					<div class="aui-btn aui-btn-danger">鱼尾边大衣</div>
+					<div class="aui-btn aui-btn-info">黑色系</div>
+					<div class="aui-btn aui-btn-primary">红色系</div>
+				</div>
+			</div>
+			<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+			<script type="text/javascript">
+				$(function() {
+					$("#list").click(function() {
+						debugger;
+						var css = $("#list").attr("style");
+						if(css.indexOf("border-left:2px solid #FF7200") >= 0)
+							$(this).css("border-left", "2px solid white");
+						else
+							$(this).css("border-left", "2px solid #FF7200");
+					});
+				})
+			</script>
+		</div>
+		<div class="fot"></div>
+		<footer class="aui-bar aui-bar-tab" id="footer">
+			<div class="aui-bar-tab-item aui-active" tapmode>
+				<a href="index.html">
+					<i class="aui-iconfont aui-icon-home"></i>
+					<div class="aui-bar-tab-label">首页</div>
+				</a>
+			</div>
+			<div class="aui-bar-tab-item" tapmode>
+				<a href="list.html" style="color:limegreen;">
+					<i class="aui-iconfont aui-icon-menu"></i>
+					<div class="aui-bar-tab-label">分类</div>
+				</a>
+			</div>
+			<div class="aui-bar-tab-item" tapmode>
+				<a href="businessList.html">
+					<i class="aui-iconfont aui-icon-pencil"></i>
+					<div class="aui-bar-tab-label">商家列表</div>
+				</a>
+			</div>
+			<div class="aui-bar-tab-item" tapmode>
+				<a href="personal.html">
+					<i class="aui-iconfont aui-icon-my"></i>
+					<div class="aui-bar-tab-label">个人中心</div>
+				</a>
+			</div>
+		</footer>
+		<script type="text/javascript" src="js/api.js"></script>
+		<script type="text/javascript">
+			apiready = function() {
+				api.parseTapmode();
+			}
+		</script>
+	</body>
+
+</html>
